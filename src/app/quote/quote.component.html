@@ -1,1 +1,28 @@
-<p>quote works!</p>
+<div class="container-">
+    <header class="heading">
+        <h1>Lyrical Quotes</h1>
+    </header>
+    <div class="check-form">
+        <app-quote-form></app-quote-form>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h3 class="head1"> Recent added quotes</h3>
+        <div class="border-line">
+            <ul>
+                <li *ngFor = 'let quote of quotes'>
+                    {{quote.name}}
+                    
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-6">
+            <h3 class="head2">Highest voted quotes</h3>
+            <div class="border-line">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
