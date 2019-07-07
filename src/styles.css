@@ -2,5 +2,5 @@
 @import '../node_modules/font-awesome/css/font-awesome.css';
 body{
     background: url("assets/watch.jpg") no-repeat;
-    background-size: 100% 340%; 
+    background-size: cover; 
 }

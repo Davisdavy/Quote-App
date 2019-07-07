@@ -1,37 +1,30 @@
 <p>
     {{quote.quoteDetail}}
   </p>
-<p></p>
-  <div class="four wide column center aligned votes">
-    <div class="ui statistic">
-      
-      <div class="value">
-        {{ upDownVotes }}
-      </div> 
+  <div>
+    
       <div class="label">
         Votes:
       </div>
-  
-    </div>
-  
   </div>
+  <div>
   
-  <div class="twelve wide column">
-  
-    <ul class="ui big horizontal list voters">
+    <ul>
       <li class="item">
         <a href (click)="upVote()">
           <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-          upvote
         </a>
       </li>
-  
+      <div class="value">
+        {{ upDownVotes }}
+      </div> 
       <li class="item">
         <a href (click)="downVote()">
           <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-          downvote
         </a>
       </li>
-  
+      <div class="value">
+        {{ downUpVotes }}
+      </div>
     </ul>
   </div>

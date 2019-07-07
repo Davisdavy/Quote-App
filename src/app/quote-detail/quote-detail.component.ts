@@ -9,19 +9,22 @@ import { from } from 'rxjs';
 })
 export class QuoteDetailComponent implements OnInit {
   upDownVotes: number;
+  downUpVotes: number;
 
   @Input() quote: Quote;
 
   upDownVote = 0;
+  downUpVote = 0;
   constructor() {
     this.upDownVotes = 0;
+    this.downUpVotes = 0;
    }
    upVote(): boolean {
      this.upDownVotes += 1;
      return false;
    }
    downVote(): boolean {
-     this.upDownVotes -= 1;
+     this.downUpVotes -= 1;
      return false;
    }
 

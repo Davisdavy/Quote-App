@@ -10,9 +10,19 @@ font-size: 80px;
 .border-line{
     background-color: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid rgb(145, 226, 226);
+    width: auto;
+}
+.border-line2{
+    color: #fff;
+    background-color: none;
+    border: 1px solid rgb(236, 211, 211);
     width: auto;
 }
 .head1, .head2{
     text-align: center;
+}
+h3{
+    color: rgb(247, 224, 224);
+    font-weight: 100;
 }
