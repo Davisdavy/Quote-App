@@ -3,10 +3,15 @@
 }
 h1{
 font-size: 80px; 
-   color: rgb(250, 219, 219); 
+   color: rgb(131, 215, 236); 
    font-weight: bolder;
 }
-
+.outer-line{
+    color: #fff;
+    background-color: none;
+    border: 1px solid rgb(236, 211, 211);
+    width: auto;
+}
 .border-line{
     background-color: none;
     color: #fff;

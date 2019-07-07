@@ -1,4 +1,5 @@
 <form (ngSubmit)="submitQuote()" #quoteForm='ngForm' >
+    <div class="outerline">
     <div class="form-group">
         <label for="authorName">Name</label>
         <input required ngModel name="authorName.name" #authorName="ngModel" type="text" id="authorName" text="" class="form-control">
@@ -10,5 +11,7 @@
         <textarea required ngModel name="quote.quoteOffer" #quoteOffer="ngModel" id="quote" rows="2" class="form-control"></textarea>
     </div>
   <button class="btn btn-primary">Quote</button> 
+</div>
 </form>
+
 

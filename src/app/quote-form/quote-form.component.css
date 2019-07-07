@@ -1,5 +1,6 @@
 input,textarea{
     background-color: transparent;
+    border: 1px solid rgb(124, 124, 124);
 }
 .btn{
     background: none;
@@ -13,8 +14,24 @@ input,textarea{
     background: rgb(182, 230, 230);
     
 }
+.form-control{
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+label{
+    
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
 @media screen and (min-width:400px){
     .btn{
         left: 43.5%;
     }
+    .form-control{
+    left: 25%;
+}
 }
