@@ -2,11 +2,12 @@
     <div class="form-group">
         <label for="authorName">Name</label>
         <input required ngModel name="authorName.name" #authorName="ngModel" type="text" id="authorName" text="" class="form-control">
+      
         <div class="alert alert-danger" *ngIf="authorName.touched && !authorName.valid">Author's name is required!</div>
     </div>
     <div class="form-group">
         <label for="quote">Quote</label>
-        <textarea required ngModel name="quote.quoteOffer" #quoteOffer="ngModel" id="quote" cols="30" rows="10" class="form-control"></textarea>
+        <textarea required ngModel name="quote.quoteOffer" #quoteOffer="ngModel" id="quote" cols="30" rows="5" class="form-control"></textarea>
         <div class="alert alert-danger" ></div>
     </div>
     <button class="btn btn-primary">Quote</button> 

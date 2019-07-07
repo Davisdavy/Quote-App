@@ -9,8 +9,13 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('Davis', 'Hello there!'),
+    new Quote('Davis', 'Hello there!', 'Author: Davis'),
+    new Quote('Davis', 'Hello there!', 'Author: Davis'),
   ];
+
+  toggleDetails(index) {
+    this.quotes[index].showDetail = !this.quotes[index].showDetail;
+  }
 
   constructor() { }
 
