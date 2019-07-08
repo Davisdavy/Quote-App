@@ -10,8 +10,12 @@ export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
     new Quote(1, 'Quote by:- Davis', 'Example quote'),
-    new Quote(2, 'Davis', 'Example quote'),
   ];
+  addNewQuote(quote) {
+    const quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.push(quote);
+  }
   toggleDetails(index) {
     this.quotes[index].showDetail = !this.quotes[index].showDetail;
   }
@@ -24,11 +28,7 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  addNewQuote(quote) {
-    const quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
-    this.quotes.push(quote);
-  }
+
   constructor() { }
 
   ngOnInit() {
