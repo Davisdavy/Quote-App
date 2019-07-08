@@ -1,5 +1,5 @@
 <p>
-    {{quote.name}}
+    {{quote.authorOffer}}
   </p>
   <div>
     
@@ -11,7 +11,7 @@
       </div>
   </div>
   <div>
-  
+  {{quote.quoteName}} posted on {{quote.submitDate|timeAgo}}
     <ul>
       <li class="item">
         <a href (click)="upVote()">

@@ -8,12 +8,19 @@ import { from } from 'rxjs';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  newQuote = new Quote(0, '', '');
+  newQuote = new Quote('', '', new Date());
 
   @Output() addQuote = new EventEmitter<Quote>();
+  quoteName: string;
+  quoteAuthor: string;
+  theQuote: any;
+  quoteDate: Date = new Date();
 
   submitQuote() {
-    this.addQuote.emit(this.newQuote);
+    this.theQuote = new Quote(this.quoteName, this.quoteAuthor, this.quoteDate);
+    this.quoteAuthor = '';
+    this.quoteName = '';
+    this.addQuote.emit(this.theQuote);
   }
 
   constructor() { }
