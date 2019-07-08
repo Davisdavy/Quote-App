@@ -18,6 +18,6 @@ This project enables a user to add a quote and be able to delete it, vote and to
 
 # Contact
 
-Email! [](davisdavy96@gmail.com)
+Email! [Davis](davisdavy96@gmail.com)
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
