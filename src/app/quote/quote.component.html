@@ -11,8 +11,10 @@
         <div class="border-line">
             <ul>
                 <div *ngFor = 'let quote of quotes; let i= index'>
-                <li appHighlight >{{quote.quoteOffer}}</li>
-                    <button class="btn btn-primary" (click)='toggleDetails(i)'>Details</button>
+                <li appHighlight >
+                    {{quote.quoteOffer}}
+                </li>
+                    <button class="btn btn-primary" (click)='toggleDetails(i)'>See Details</button>
                     <app-quote-detail *ngIf='quote.showDetail' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
             </div>
             </ul>

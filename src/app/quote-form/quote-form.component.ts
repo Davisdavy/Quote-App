@@ -8,7 +8,7 @@ import { from } from 'rxjs';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  newQuote = new Quote(0, '', '', '');
+  newQuote = new Quote(0, 'Quote by- ', '');
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitQuote() {
