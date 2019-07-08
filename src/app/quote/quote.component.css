@@ -32,3 +32,8 @@ h3{
     color: rgb(247, 224, 224);
     font-weight: 100;
 }
+.btn{
+    background-color: rgb(138, 138, 138);
+    border: none;
+    outline: none;
+}

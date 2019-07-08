@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('Quote by:- Davis', 'Example quote', new Date()),
+    new Quote('Davis', 'Example quote', new Date()),
   ];
   addNewQuote(quote) {
     const quoteLength = this.quotes.length;
