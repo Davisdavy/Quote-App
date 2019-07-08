@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostBinding } from '@angular/core';
 import { Quote} from '../quote';
 import { from } from 'rxjs';
 
@@ -12,6 +12,7 @@ export class QuoteDetailComponent implements OnInit {
   downUpVotes: number;
 
   @Input() quote: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
 
   upDownVote = 0;
   downUpVote = 0;
@@ -24,10 +25,13 @@ export class QuoteDetailComponent implements OnInit {
      return false;
    }
    downVote(): boolean {
-     this.downUpVotes -= 1;
+     this.downUpVotes += 1;
      return false;
    }
 
+   quoteDelete(complete: boolean ) {
+    this.isComplete.emit(complete);
+  }
   ngOnInit() {
   }
 

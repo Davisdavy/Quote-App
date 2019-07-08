@@ -9,10 +9,16 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('Davis', 'Hello there!', 'Author: Davis'),
-    new Quote('Davis', 'Hello there!', 'Author: Davis'),
+    new Quote(1, 'Davis', 'Example quote', 'Author: Example'),
   ];
-
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      const toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quoteOffer}?`);
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
   toggleDetails(index) {
     this.quotes[index].showDetail = !this.quotes[index].showDetail;
   }
